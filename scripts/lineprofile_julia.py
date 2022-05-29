@@ -2,6 +2,14 @@
 x1, x2, y1, y2 = -1.8, 1.8, -1.8, 1.8
 c_real, c_img = -0.62772, -.42193
 
+# check for line_profiler or memory_profiler in the local scope, both
+# are injected by their respective tools or they're absent
+# if these tools aren't being used (in which case we need to substitute
+# a dummy @profile decorator)
+if 'line_profiler' not in dir() and 'profile' not in dir():
+    def profile(func):
+        return func
+
 def calculate_juliaset_serial(maxiter, zs, cs):
     """Calculate output list using Julia update rule"""
     output = [0] * len(zs)
@@ -15,7 +23,7 @@ def calculate_juliaset_serial(maxiter, zs, cs):
         output[i] = n
     return output
 
-#@profile
+@profile
 def calculate_juliaset_serial_expanded(maxiter, zs, cs):
     """Calculate output list using Julia update rule"""
     output = [0] * len(zs)
