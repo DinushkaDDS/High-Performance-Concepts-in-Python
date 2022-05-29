@@ -15,7 +15,7 @@ def calculate_juliaset_serial(maxiter, zs, cs):
         output[i] = n
     return output
 
-@profile
+#@profile
 def calculate_juliaset_serial_expanded(maxiter, zs, cs):
     """Calculate output list using Julia update rule"""
     output = [0] * len(zs)
