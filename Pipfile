@@ -8,6 +8,7 @@ snakeviz = "*"
 line-profiler = "*"
 memory-profiler = "*"
 matplotlib = "*"
+numpy = "*"
 
 [dev-packages]
 
