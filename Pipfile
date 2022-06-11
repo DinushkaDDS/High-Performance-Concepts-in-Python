@@ -9,6 +9,7 @@ line-profiler = "*"
 memory-profiler = "*"
 matplotlib = "*"
 numpy = "*"
+numexpr = "*"
 
 [dev-packages]
 
