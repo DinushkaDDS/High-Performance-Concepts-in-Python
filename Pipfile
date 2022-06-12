@@ -10,6 +10,7 @@ memory-profiler = "*"
 matplotlib = "*"
 numpy = "*"
 numexpr = "*"
+cython = "*"
 
 [dev-packages]
 
