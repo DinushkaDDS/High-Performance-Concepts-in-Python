@@ -12,6 +12,7 @@ numexpr = "*"
 cython = "*"
 numpy = "*"
 pycocotools = "*"
+numba = "*"
 
 [dev-packages]
 
