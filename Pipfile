@@ -13,6 +13,8 @@ cython = "*"
 numpy = "*"
 pycocotools = "*"
 numba = "*"
+requests = "*"
+tornado = "*"
 
 [dev-packages]
 
