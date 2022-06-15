@@ -15,6 +15,7 @@ pycocotools = "*"
 numba = "*"
 requests = "*"
 tornado = "*"
+joblib = "*"
 
 [dev-packages]
 
