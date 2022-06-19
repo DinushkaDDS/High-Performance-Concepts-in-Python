@@ -16,6 +16,7 @@ numba = "*"
 requests = "*"
 tornado = "*"
 joblib = "*"
+ipyparallel = "*"
 
 [dev-packages]
 
